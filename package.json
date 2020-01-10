@@ -1,8 +1,9 @@
 {
   "name": "parse-server-authy-adapter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Adapter for authy OTP authentication",
   "main": "./src/index.js",
+  "repository": "github:emilrb/Parse-Server-Authy-Adapter",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
