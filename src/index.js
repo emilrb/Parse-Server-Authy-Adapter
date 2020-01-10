@@ -51,7 +51,7 @@ function validateAuthData(authData, options) {
 	} else {
 		return Promise.reject(new Parse.Error(
 			Parse.Error.OBJECT_NOT_FOUND,
-			'Missing id or One-Time password',
+			'Missing id or One-Time Password',
 		)) 
 	}
 }
