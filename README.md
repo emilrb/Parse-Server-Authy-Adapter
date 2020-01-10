@@ -24,7 +24,7 @@ Allows your Parse Server to authenticate users using Twilio Authy One-Time Passw
 
 ## Usage
 
-1. Follow Authy's instructions to receive a OTP
+1. Follow Authy's instructions to receive an OTP
 
 1. `POST` to `/users` on parse-server the following payload
 	```json
