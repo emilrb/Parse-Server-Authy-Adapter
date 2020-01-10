@@ -41,7 +41,6 @@ function validateAuthData(authData, options) {
 	const otp = authData.otp
 	if (id && otp) {
 		return verify(id, otp, apiKey).then((response) => {
-			console.log(response)
 			if (response && response.success) {
 				return
 			}
@@ -51,10 +50,10 @@ function validateAuthData(authData, options) {
 			)
 		})
 	} else {
-		return Promise.reject(new Parse.Error(
+		return Promise.reject(JSON.stringify(new Parse.Error(
 			Parse.Error.OBJECT_NOT_FOUND,
 			'Missing id or One-Time password',
-		)) 
+		))) 
 	}
 }
 
