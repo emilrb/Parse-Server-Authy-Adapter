@@ -1,4 +1,3 @@
-const Parse = require('parse/node').Parse
 const https = require('https')
 
 // Wrapper for api requests based on https://github.com/andrewchae/parse-server-reddit-auth-adapter/
@@ -50,10 +49,10 @@ function validateAuthData(authData, options) {
 			)
 		})
 	} else {
-		return Promise.reject(JSON.stringify(new Parse.Error(
+		return Promise.reject(new Parse.Error(
 			Parse.Error.OBJECT_NOT_FOUND,
 			'Missing id or One-Time password',
-		))) 
+		)) 
 	}
 }
 
